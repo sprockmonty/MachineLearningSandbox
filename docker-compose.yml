@@ -1,0 +1,9 @@
+version: '3'
+services:
+    tensorflow:
+        image: tensorflow/tensorflow
+        ports:
+            - 80:80
+        volumes:
+            - ./tensor_files/:/home/
+        tty: true
